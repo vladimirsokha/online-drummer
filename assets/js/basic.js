@@ -1,3 +1,5 @@
+
+
 window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
       return; // Do nothing if the event was already processed
@@ -7,10 +9,12 @@ window.addEventListener("keydown", function (event) {
       case "Down": // IE/Edge specific value
       case "ArrowDown":
         console.log("ARROW DOWN");
+        new Audio('assets/music/kick.wav').play();
         break;
       case "Up": // IE/Edge specific value
       case "ArrowUp":
         console.log("ARROW UP");
+        new Audio('assets/music/snare.wav').play();
         break;
       case "Left": // IE/Edge specific value
       case "ArrowLeft":
@@ -25,7 +29,7 @@ window.addEventListener("keydown", function (event) {
         break;
       case "Esc": // IE/Edge specific value
       case "Escape":
-        console.log("ESCAPE")
+        console.log("ESCAPE");
         break;
       default:
         return; // Quit when this doesn't handle the key event.
