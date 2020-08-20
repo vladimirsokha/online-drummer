@@ -8,26 +8,26 @@ window.addEventListener("keydown", function (event) {
     switch (event.key) {
       case "Down": // IE/Edge specific value
       case "ArrowDown":
-        new Audio('assets/music/kick.wav').play();
+        playKick();
         break;
       case "Up": // IE/Edge specific value
       case "ArrowUp":
-        new Audio('assets/music/snare.wav').play();
+        playSnare();
         break;
       case "Left": // IE/Edge specific value
       case "ArrowLeft":
-        new Audio('assets/music/clap.wav').play();
+        playClap();
         break;
       case "Right": // IE/Edge specific value
       case "ArrowRight":
-        new Audio('assets/music/hihat.wav').play();
+        playHihat();
         break;
       case "Enter":
         console.log("ENTER");
         break;
       case "Esc": // IE/Edge specific value
       case "Escape":
-        new Audio('assets/music/crash.wav').play();
+        playCrash();
         break;
       default:
         return; // Quit when this doesn't handle the key event.
@@ -36,3 +36,23 @@ window.addEventListener("keydown", function (event) {
     // Cancel the default action to avoid it being handled twice
     event.preventDefault();
   }, true);
+
+  function playKick(){
+    new Audio('assets/music/kick.wav').play();
+  }
+
+  function playSnare(){
+    new Audio('assets/music/snare.wav').play();
+  }
+
+  function playHihat(){
+    new Audio('assets/music/hihat.wav').play();
+  }
+
+  function playClap(){
+    new Audio('assets/music/clap.wav').play();
+  }
+
+  function playCrash(){
+    new Audio('assets/music/crash.wav').play();
+  }
