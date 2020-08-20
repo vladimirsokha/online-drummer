@@ -19,10 +19,12 @@ window.addEventListener("keydown", function (event) {
       case "Left": // IE/Edge specific value
       case "ArrowLeft":
         console.log("ARROW LEFT");
+        new Audio('assets/music/clap.wav').play();
         break;
       case "Right": // IE/Edge specific value
       case "ArrowRight":
         console.log("ARROW RIGHT");
+        new Audio('assets/music/hihat.wav').play();
         break;
       case "Enter":
         console.log("ENTER");
@@ -30,6 +32,7 @@ window.addEventListener("keydown", function (event) {
       case "Esc": // IE/Edge specific value
       case "Escape":
         console.log("ESCAPE");
+        new Audio('assets/music/crash.wav').play();
         break;
       default:
         return; // Quit when this doesn't handle the key event.
