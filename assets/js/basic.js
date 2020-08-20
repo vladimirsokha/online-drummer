@@ -1,5 +1,3 @@
-let window = document.defaultView;
-
 window.addEventListener("keydown", function (event) {
     if (event.defaultPrevented) {
       return; // Do nothing if the event was already processed
@@ -8,26 +6,26 @@ window.addEventListener("keydown", function (event) {
     switch (event.key) {
       case "Down": // IE/Edge specific value
       case "ArrowDown":
-        // Do something for "down arrow" key press.
+        console.log("ARROW DOWN");
         break;
       case "Up": // IE/Edge specific value
       case "ArrowUp":
-        // Do something for "up arrow" key press.
+        console.log("ARROW UP");
         break;
       case "Left": // IE/Edge specific value
       case "ArrowLeft":
-        // Do something for "left arrow" key press.
+        console.log("ARROW LEFT");
         break;
       case "Right": // IE/Edge specific value
       case "ArrowRight":
-        // Do something for "right arrow" key press.
+        console.log("ARROW RIGHT");
         break;
       case "Enter":
-        // Do something for "enter" or "return" key press.
+        console.log("ENTER");
         break;
       case "Esc": // IE/Edge specific value
       case "Escape":
-        // Do something for "esc" key press.
+        console.log("ESCAPE")
         break;
       default:
         return; // Quit when this doesn't handle the key event.
